@@ -1,0 +1,12 @@
+.header {
+    color: #C2948A; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    margin-left: 30px;
+  }
+  
+  .header h1 {
+    margin: 1000;
+    font-size: 60px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
