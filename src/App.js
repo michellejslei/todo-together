@@ -8,6 +8,8 @@ import Challenges from './pages/Challenges';
 import Calendar from './pages/Calendar';
 import Friends from './pages/Friends';
 import Settings from './pages/Settings';
+import Todos from './pages/Todos';
+import Habits from './pages/Habits';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/friends" element={<Friends />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/todos" element={<Todos />} />
+        <Route path="/habits" element={<Habits />} />
       </Routes> 
     </Router>
   );
