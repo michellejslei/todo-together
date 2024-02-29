@@ -1,0 +1,121 @@
+.calendar {
+    background-color: #F6F0ED;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px; 
+    margin: 0 auto;
+  }
+
+  .month-header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #28536B;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-navigation {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+  }
+  
+  .days.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .days.row .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #28536B; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+  }
+  
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(6, 40px);
+    gap: 5px;
+  }
+  
+  .column.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column.disabled {
+    color: #d3d3d3; 
+  }
+  
+  .column.cell:not(.disabled) {
+    cursor: pointer;
+  }
+  
+  .column.cell:not(.disabled):hover {
+    background-color: #FFFFFF; 
+  }
+  
+  .column.cell.selected {
+    background-color: #C2948A;
+  }
+  
+  .days.row span {
+    text-align: center;
+    display: block;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; 
+    width: 40px;
+    margin: auto;
+    border-radius: 4px;
+  }
+  
+  .bg {
+    display: flex;
+    font-size: 15px; 
+    justify-content: center;
+    align-items: center;
+    color: #28536B; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+  }
+  
+  .calendar-navigation button {
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+    justify-content: center;
+    align-items: center;
+    color: #28536B;
+    background-color: #F6F0ED;
+  }
+  
+  button:disabled {
+    color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
